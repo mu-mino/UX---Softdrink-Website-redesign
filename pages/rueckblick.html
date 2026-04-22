@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FuseTea – Sprint Review &amp; Learnings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../fuseTea.css">
+  <style>
+    .review-section { padding: 3rem 0; max-width: 1100px; margin: 0 auto; }
+    .review-section h2 { font-size: 1.8rem; color: white; margin-bottom: 1rem; margin-left: 0; height: auto; width: auto; }
+    .review-section p { font-weight: 600; color: rgba(255,255,255,0.85); line-height: 1.8; font-size: 1.05rem; margin-bottom: 1rem; }
+    .review-section ul { padding-left: 1.5rem; }
+    .review-section li { margin-bottom: 0.8rem; font-weight: 600; color: rgba(255,255,255,0.85); line-height: 1.7; }
+    .review-section strong { color: #fff; }
+    .quote-block { font-style: italic; background: rgba(255,255,255,0.06); padding: 1.5rem; border-left: 4px solid rgba(175,120,214,0.7); margin: 2rem 0; border-radius: 6px; color: rgba(255,255,255,0.8); font-weight: 500; font-size: 1rem; line-height: 1.7; }
+    .feedback-bubble { background: rgba(255,255,255,0.07); padding: 1.2rem 1.5rem; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); margin-bottom: 1.5rem; font-size: 1rem; color: rgba(255,255,255,0.8); font-weight: 500; line-height: 1.7; }
+    .feedback-bubble.highlight { border-left: 4px solid rgba(0,195,122,0.7); }
+    .feedback-bubble strong { color: #fff; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin-top: 2rem; }
+    @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+  <script>window.TRANSITION_ICON = '../media/yasarsDoseIcon.png';</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script defer src="../transition.js"></script>
+</head>
+<body>
+  <div class="background-blobs">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <nav class="page-nav">
+    <a href="texte.html" class="back-link">← Texte &amp; Kommunikation</a>
+    <span class="page-title-small">Abschluss – Sprint Review &amp; Learnings</span>
+    <a href="../index.html" class="next-link">← Zur Übersicht</a>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- Sprint Review -->
+    <div class="review-section">
+      <h2 style="font-size:2.2rem; margin-bottom:2rem;">🔄 Design Sprint – Rückblick</h2>
+
+      <section>
+        <h2>⏱️ Ausgangssituation &amp; Herausforderung</h2>
+        <p>In nur einer Woche galt es, eine komplette Website vom Entwickler-Entwurf bis zum Launch zu überarbeiten – konzeptionell, visuell und inhaltlich. Ich übernahm als Generalist die komplette UX-Rolle, inklusive Research, Informationsarchitektur, visueller Gestaltung, Testing, Redaktionsplanung und Kommunikationsstrategie. Parallel dazu: meine Abitur-Klausurphase. Zeit war Luxus – Empathie war entscheidend.</p>
+      </section>
+
+      <section>
+        <h2>🧠 Phase 1: Empathie &amp; Research</h2>
+        <ul>
+          <li>Visuelle &amp; sprachliche Analyse der bestehenden Website</li>
+          <li>Erkennung exkludierender Gestaltungselemente</li>
+          <li>Interne Umfragen im privaten Umfeld – Empathy Maps &amp; Persona nach Google-Template</li>
+          <li>Formulierung konkreter „How Might We"-Fragen zur Lösungsfindung</li>
+        </ul>
+        <div class="quote-block">„Wie könnten wir ein inklusives Urlaubsgefühl vermitteln – ohne kulturelle Gruppen auszuschließen?"</div>
+      </section>
+
+      <section>
+        <h2>📐 Phase 2: Informationsarchitektur &amp; Redesign</h2>
+        <ul>
+          <li>Reduktion redundanter Elemente</li>
+          <li>Visuelle Hierarchie &amp; Scrolling-Logik überarbeitet</li>
+          <li>Hero-Bereich mit einem stimmungsvollen Werbeplakat ersetzt</li>
+          <li>Illustrationen stilistisch an das Werbekonzept angepasst</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>✍️ Phase 3: Content Design &amp; Sprache</h2>
+        <ul>
+          <li>Tonalität auf 16–35-jährige Zielgruppe abgestimmt</li>
+          <li>Texte strukturiert, fokussiert, authentisch</li>
+          <li>Calls-to-Action benutzerzentriert integriert</li>
+        </ul>
+        <div class="quote-block">„Manchmal braucht es nur einen Schluck, um sich wie im Auslandsurlaub zu fühlen."</div>
+      </section>
+
+      <section>
+        <h2>🔍 Phase 4: Testing &amp; Feedback</h2>
+        <ul>
+          <li>Website im privaten Umfeld präsentiert &amp; Nutzerverhalten beobachtet</li>
+          <li>Feedback durchweg positiv: intuitiv, verständlich, ästhetisch</li>
+          <li>Klient zeigt sich überrascht &amp; dankbar, kündigt Folgeaufträge an</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>🎯 Resultate &amp; persönliche Learnings</h2>
+        <ul>
+          <li>Projekt erfolgreich innerhalb der Deadline gelauncht</li>
+          <li>Visuelle &amp; inhaltliche Qualität durch nutzerzentrierte Entscheidungen gesteigert</li>
+          <li>Berufliches Vertrauen durch den Klienten gewonnen</li>
+          <li>Persönliche Erkenntnis: <strong>Empathie + Struktur + Tempo = Wirkung</strong></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Post-Launch Research -->
+    <section style="padding:4rem 0; border-top:1px solid rgba(255,255,255,0.1);">
+      <h2 style="text-align:center; font-size:2rem; margin-bottom:2rem; color:white; height:auto; width:auto;">
+        🚀 Post-Launch Research &amp; Rückmeldung
+      </h2>
+
+      <div class="two-col">
+        <div>
+          <div class="feedback-bubble">
+            <strong>🧪 Nutzerfeedback:</strong><br>
+            „Die Seite ist super einfach zu navigieren – ich wusste sofort, was ich tun muss."
+          </div>
+          <div class="feedback-bubble">
+            <strong>📱 UX-Test im Bekanntenkreis:</strong><br>
+            „Alles wirkt stimmig, schön gestaltet und intuitiv – gefällt mir richtig gut."
+          </div>
+          <div class="feedback-bubble highlight">
+            <strong>👔 Rückmeldung vom Klienten:</strong><br>
+            „Ich bin wirklich beeindruckt! Das übertrifft meine Erwartungen – danke für die professionelle Unterstützung."
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size:1.4rem; margin-bottom:1rem; color:white;">Qualitatives Feedback &amp; berufliche Anerkennung</h3>
+          <ul style="font-size:1rem; line-height:1.7; color:rgba(255,255,255,0.8);">
+            <li>Website mehreren Personen aus dem privaten Umfeld präsentiert und Interaktionen beobachtet.</li>
+            <li>Nutzerverhalten durchweg positiv: einfache Navigation, gutes Layout, schnelle Orientierung.</li>
+            <li>Sehr positives Feedback vom Unternehmer – inklusive beruflicher Anerkennung.</li>
+            <li>Klient bestätigte, mich in Zukunft für weitere Designprojekte zu beauftragen.</li>
+            <li>Öffentliche Weiterempfehlung angekündigt.</li>
+          </ul>
+          <p style="margin-top:1.5rem; font-style:italic; color:rgba(255,255,255,0.5); font-size:0.95rem;">
+            Design ist nicht nur Interface – sondern Wirkung, Beziehung und Vertrauen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="page-footer-nav">
+    <a href="texte.html" class="back-link">← Texte &amp; Kommunikation</a>
+    <a href="../index.html" class="next-link">Zur Übersicht →</a>
+  </div>
+</body>
+</html>

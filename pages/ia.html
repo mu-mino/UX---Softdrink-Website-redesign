@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FuseTea – Informationsarchitektur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../fuseTea.css">
+  <script>window.TRANSITION_ICON = '../media/yasarsDoseIcon.png';</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script defer src="../transition.js"></script>
+</head>
+<body>
+  <div class="background-blobs">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <nav class="page-nav">
+    <a href="backstory.html" class="back-link">← Backstory</a>
+    <span class="page-title-small">Arbeitsprozess I – Informationsarchitektur</span>
+    <a href="produkte.html" class="next-link">Arbeitsprozess II →</a>
+  </nav>
+
+  <main class="page-content">
+
+    <article id="IASection">
+      <h1 class="revertMargin" style="margin-top:0 !important;">Der Arbeitsprozess <span>&nbsp;Ⅰ</span></h1>
+      <h2 class="revertMargin" style="color:white; font-weight:800; margin-left:0 !important;">Informationsarchitektur</h2>
+
+      <div class="processColumn">
+        <div class="item-row1" id="IAPic"
+             style="grid-column:1/3; grid-row:1/14; height:55rem; width:85rem;
+                    background-image:url(../media/wireframe_weiss.png);
+                    background-position:center; background-size:contain; background-repeat:no-repeat;
+                    margin:0 auto; margin-right:35%;"></div>
+
+        <section class="rollen Sec" style="margin-left:0; margin-top:0;">
+          <h1 style="margin-left:10% !important; margin-top:0; color:white; font-weight:600;">
+            Informationsarchitektur: Vorher vs. Nachher
+          </h1>
+          <h2 style="margin-top:0; margin-left:10% !important; color:white; font-weight:600; font-size:1.4rem;">
+            Rechercheergebnis: Die Mehrheit der Nutzer greift über Mobilgeräte zu. Daher: Mobile First.
+          </h2>
+
+          <div style="display:grid; gap:1.5rem; margin-left:7%;" id="IAPhone">
+
+            <ul class="beforeAfterIA" style="margin-left:5% !important;">
+              <h3 style="min-height:1rem; color:white; font-weight:600;">Vorher</h3>
+              <li>Kein Mobile-First Design</li>
+              <li>Überladung durch drei visuell überfordernde Kästen im Header</li>
+              <li>Unstrukturierte Inhaltsreihenfolge</li>
+              <li>Klientwunsch: Markenlogos ganz oben – unüblich und irritierend</li>
+              <li>„Unsere Geschichte" zu früh auf der Seite</li>
+              <li>Wiederholung aller Getränke – unnötige Scrolltiefe</li>
+              <li>Produkte ohne Lagerbestand (Chips) prominent dargestellt</li>
+              <li>Großflächige Grafik ohne funktionalen Mehrwert</li>
+            </ul>
+
+            <ul class="beforeAfterIA" style="margin-left:5% !important;">
+              <h3 style="min-height:1rem; color:white; font-weight:600;">Nachher</h3>
+              <li>Mobile-First Struktur: klare vertikale Nutzerführung</li>
+              <li>Reduktion auf das Wesentliche – kognitive Entlastung</li>
+              <li>Priorisierung: Wichtigstes zuerst – Top-Angebot &amp; Top-Produkte</li>
+              <li>Marken nach unten verschoben – orientiert an Nutzererwartung</li>
+              <li>„Unsere Geschichte" später eingebaut – als Vertiefung, nicht Ablenkung</li>
+              <li>Chips ans Ende verschoben – gehören nicht zur Nische &amp; nicht auf Lager</li>
+              <li>Wiederholung entfernt – alle Produkte in der Navigation gebündelt</li>
+              <li>Abschlussgrafik verkleinert – dient nur noch der visuellen Abrundung</li>
+            </ul>
+
+            <p>Die neu strukturierte Informationsarchitektur führt die Besucher Schritt für Schritt durch die wichtigsten Inhalte. Dadurch wurde der <strong>Userflow</strong> optimiert.</p>
+
+          </div>
+
+          <div id="evidence">
+            <p style="font-weight:600;"><strong style="color:var(--grey);">UX-Grundlagen zur Entscheidung:</strong></p>
+            <ul style="font-weight:600;">
+              <li><em>Hick's Law:</em> Weniger Auswahl beschleunigt Entscheidungen</li>
+              <li><em>Serial Position Effect:</em> Wichtiges gehört an den Anfang</li>
+              <li><em>Jakob's Law:</em> Nutzer erwarten bekannte Muster</li>
+              <li><em>Mobile-First Design:</em> Optimierung für die Hauptnutzungsplattform</li>
+              <li><em>Content Hierarchy:</em> Klar gegliedert = bessere Orientierung &amp; Conversion</li>
+            </ul>
+            <ul style="font-weight:400;">
+              <h3 style="font-weight:600; color:var(--grey); margin-bottom:3% !important; min-height:0;">Verwendete Tools</h3>
+              <li>Low‑Fidelity‑Wireframes in <strong>Goodnotes</strong> auf dem iPad. Als alleiniger Designer skizzierte ich unter Zeitdruck kollaborativ Ideen und stellte sie telefonisch vor.</li>
+            </ul>
+          </div>
+
+        </section>
+      </div>
+    </article>
+
+  </main>
+
+  <div class="page-footer-nav">
+    <a href="backstory.html" class="back-link">← Backstory</a>
+    <a href="produkte.html" class="next-link">Weiter: Produktdarstellung →</a>
+  </div>
+</body>
+</html>

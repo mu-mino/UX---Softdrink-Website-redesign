@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FuseTea – Produktdarstellung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../fuseTea.css">
+  <script>window.TRANSITION_ICON = '../media/yasarsDoseIcon.png';</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script defer src="../transition.js"></script>
+</head>
+<body>
+  <div class="background-blobs">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <nav class="page-nav">
+    <a href="ia.html" class="back-link">← Informationsarchitektur</a>
+    <span class="page-title-small">Arbeitsprozess II – Produktdarstellung</span>
+    <a href="empathie.html" class="next-link">Arbeitsprozess III →</a>
+  </nav>
+
+  <main class="page-content">
+
+    <article>
+      <section id="productSection" style="margin-left:-5%;">
+        <div style="display:grid; grid-template-columns:1fr; gap:1.5rem; margin-left:7%; margin-top:10%;" id="dontMixTopOfArbeitsp2">
+
+          <h1 id="workProcess" style="margin-top:0 !important;">Der Arbeitsprozess <span>&nbsp;Ⅱ</span></h1>
+          <h2 id="IA" style="color:white; font-weight:800;">Produktdarstellung und Anpassung an die Zielgruppe</h2>
+
+          <div id="sourceImages" style="display:flex; gap:3rem; flex-wrap:nowrap; justify-content:center; margin-top:10%;">
+            <div class="toolItem">
+              <label class="label">Blubberndes Unterwasser-Bild</label>
+              <img loading="lazy" class="sourcePics" src="../media/unsplash.jpeg" alt="Unbearbeitetes Bild Red Bull &amp; Fanta">
+            </div>
+            <div class="toolItem">
+              <label class="label">Farbexplosion</label>
+              <img loading="lazy" class="sourcePics" src="../media/joozy_source.png" alt="Unbearbeitetes Bild Joozy Drinks">
+            </div>
+            <div class="toolItem">
+              <label class="label">Exotisches Wasser-Spritzen</label>
+              <img loading="lazy" class="sourcePics" src="../media/unsplash2.jpg" alt="Unbearbeitetes Bild Fuse Tea">
+            </div>
+            <div class="toolItem">
+              <label class="label">Leuchtender Hintergrund</label>
+              <img loading="lazy" class="sourcePics" src="../media/chipsVorher.png" alt="Unbearbeitetes Bild Chips">
+            </div>
+          </div>
+
+          <img loading="lazy" id="products" src="../media/vergleich_produktbilder_weiss.png"
+               alt="Vergleich Produktdarstellung vorher und nachher"
+               style="width:100%; margin-top:5%;">
+
+          <div class="productText">
+            <h2 style="color:white; font-weight:800;">Produktbilder – Vorher vs. Nachher</h2>
+
+            <ul>
+              <h3>Ausgangssituation</h3>
+              <p>Die ursprünglichen Produktbilder entsprachen weder ästhetischen noch professionellen Standards. Es fehlte an Konsistenz hinsichtlich Größe, Ausrichtung und Format.</p>
+            </ul>
+            <ul>
+              <h3>Ziele</h3>
+              <li>Verbesserung der visuellen Markenwirkung</li>
+              <li>Stärkung des Nutzervertrauens durch professionelle Darstellung</li>
+              <li>Reduktion visueller Ablenkung in der Kaufentscheidung</li>
+              <li>Visuelle Einheitlichkeit über alle Produktkategorien hinweg</li>
+            </ul>
+            <ul>
+              <h3>Vorgehen</h3>
+              <li>Bearbeitung aller Bilder in <strong>Krita</strong> mit präziser Ebenenausrichtung</li>
+              <li><strong>Bildoptimierung durch KI:</strong> Hintergrund entfernt in <strong>Canva</strong> und <strong>Galerie-App</strong></li>
+              <li>Hintergrund der Chipstüten auf deren Farbpalette abgestimmt</li>
+              <li>Erstellung thematischer Hintergründe für exotische Produkte</li>
+              <li>Farbmodifikation und Invertierung bei „Joozy"-Produkten</li>
+              <li>Einheitliche Produktbilder auf der Landingpage</li>
+              <li>Verzicht auf Hintergrundbilder in der Detailansicht</li>
+            </ul>
+            <ul>
+              <h3>Ergebnisse</h3>
+              <li><strong>Visuelle Konsistenz:</strong> Einheitliche Ausrichtung, Formate und Größen</li>
+              <li><strong>Markenstärkung:</strong> Bildsprache entspricht nun dem Selbstbild des Shops</li>
+              <li><strong>Conversion-Förderung:</strong> Weniger Ablenkung = schnellere Entscheidungen</li>
+              <li><strong>Zielgruppenansprache:</strong> Optimiert auf Hauptzielgruppe 16–35 Jahre</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+    </article>
+
+    <!-- Startseiten-Redesign -->
+    <article>
+      <section id="visualComparison" style="margin-top:4rem;">
+        <h2>Startseiten-Redesign – Visuelle &amp; strukturelle Optimierung</h2>
+        <img loading="lazy" src="../media/Grafiken vorher nachher.png" alt="Startseite vorher und nachher"
+             style="width:100%; border-radius:8px; margin-top:2rem;">
+
+        <div class="productText" style="margin-top:2rem;">
+          <p style="margin:1.5rem 5%;">
+            Neu hinzugekommen: ein eigenes <strong>Favicon</strong> im Browser-Tab.
+            <img loading="lazy" src="../media/yasarsDoseIcon.png" alt="Favicon"
+                 style="height:2rem; width:2rem; vertical-align:middle; display:inline-block; margin-left:0.4rem;">
+          </p>
+          <ul>
+            <li><strong>Ausgangssituation:</strong> Drei Platzhalter oben – visuell und inhaltlich wenig ansprechend.</li>
+            <li><strong>Redesign:</strong> Hochwertiges, buntes Werbeplakat mit „Summer Vibes".</li>
+            <li><strong>Farbkonzept:</strong> Lila, Pink und warme Töne erzeugen emotionale Wärme und Nostalgie.</li>
+            <li><strong>Preisstrategie:</strong> Einführung der 12er-Packs (statt 24er) basierend auf Endkund:innen-Research.</li>
+            <li><strong>Designstrategie:</strong> Dosengrafiken im Ölmalerei-Stil – kohärent, hochwertig.</li>
+            <li><strong>Conversion-Ziel:</strong> Preisvergleich (UVP durchgestrichen) fördert sofortige Kaufentscheidung.</li>
+          </ul>
+          <h3 style="margin-left:5%; margin-top:3%;">Erkenntnisse aus dem Einsatz von KI</h3>
+          <ul style="margin-top:0 !important;">
+            <li><strong>Generalisierung:</strong> ChatGPT liefert brauchbare Entwürfe, trifft selten die markenspezifische Bildsprache.</li>
+            <li><strong>Fehlendes situatives Gespür:</strong> Nuancen in Tonalität oder kulturelle Referenzen erkennt sie kaum.</li>
+            <li><strong>Kontextverlust bei Komplexität:</strong> Mehrstufige Anforderungen führen zu inkonsistenten Ergebnissen.</li>
+          </ul>
+          <p style="margin-left:5%; margin-top:1rem;">KI als Starthilfe – jede Grafik manuell verfeinert, um Emotion und Markenidentität abzubilden.</p>
+        </div>
+      </section>
+    </article>
+
+  </main>
+
+  <div class="page-footer-nav">
+    <a href="ia.html" class="back-link">← Informationsarchitektur</a>
+    <a href="empathie.html" class="next-link">Weiter: Empathiephase →</a>
+  </div>
+</body>
+</html>

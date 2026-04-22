@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FuseTea – UX/UI Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fuseTea.css">
+  <link rel="stylesheet" href="vendor/twentytwenty/css/twentytwenty.css">
+  <script>window.TRANSITION_ICON = 'media/yasarsDoseIcon.png';</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script defer src="transition.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="vendor/twentytwenty/js/jquery.event.move.js"></script>
+  <script defer src="vendor/twentytwenty/js/jquery.twentytwenty.js"></script>
+  <script defer src="fuseTea.js"></script>
+</head>
+<body>
+  <div class="background-blobs">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <div class="hub-hero">
+      <p class="hub-eyebrow">UX / UI Case Study</p>
+      <h1 class="hub-title">FuseTea – Redesign eines Softdrinks-Onlineshops</h1>
+      <p class="hub-goal">
+        Eine ästhetische, benutzerzentrierte und inklusive Website für Getränkebestellungen.
+        <img src="media/yasarsDoseIcon.png" alt="FuseTea Icon" id="iconYasar"
+             style="display:inline-block; width:1.8rem; height:1.8rem; vertical-align:middle; margin-left:0.4rem;">
+      </p>
+    </div>
+
+    <!-- Before / After -->
+    <section id="beforeAfterSection" style="margin-bottom: 4rem;">
+      <div class="scroll-wrapper">
+        <div class="twentytwenty-container">
+          <img id="beforeImg" src="img/vorher.png" alt="Vorher" style="background-size:cover;">
+          <img id="afterImg"  src="img/nachher.png" alt="Nachher">
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <div class="hub-tools">
+      <div class="hub-tool">
+        <img src="media/Krita.png" alt="Krita">
+        <span>Krita</span>
+      </div>
+      <div class="hub-tool">
+        <img src="media/ChatGPT.png" alt="ChatGPT">
+        <span>ChatGPT</span>
+      </div>
+      <div class="hub-tool">
+        <img src="media/Canva.jpg" alt="Canva">
+        <span>Canva</span>
+      </div>
+      <div class="hub-tool">
+        <img src="media/GalerieApp.png" alt="Galerie-App">
+        <span>Galerie-App</span>
+      </div>
+      <div class="hub-tool">
+        <img src="media/Goodnotes.png" alt="Goodnotes">
+        <span>Goodnotes</span>
+      </div>
+    </div>
+
+    <!-- Section cards -->
+    <section class="cards-section">
+      <p class="cards-section-title">Prozess – 6 Kapitel</p>
+      <div class="cards-grid">
+
+        <a href="pages/backstory.html" class="section-card">
+          <p class="card-num">Einleitung</p>
+          <h3>Short Backstory</h3>
+          <p>Wie ein Dev-Freund mich ins Projekt reinzog – erzählt als Cartoon-Reihe.</p>
+          <span class="card-arrow">→</span>
+        </a>
+
+        <a href="pages/ia.html" class="section-card">
+          <p class="card-num">Arbeitsprozess I</p>
+          <h3>Informationsarchitektur</h3>
+          <p>Mobile-First Struktur, Wireframes und Vorher-Nachher-Vergleich der Seitenarchitektur.</p>
+          <span class="card-arrow">→</span>
+        </a>
+
+        <a href="pages/produkte.html" class="section-card">
+          <p class="card-num">Arbeitsprozess II</p>
+          <h3>Produktdarstellung</h3>
+          <p>Überarbeitung aller Produktbilder: Konsistenz, Farbsprache und zielgruppengerechte Ästhetik.</p>
+          <span class="card-arrow">→</span>
+        </a>
+
+        <a href="pages/empathie.html" class="section-card">
+          <p class="card-num">Arbeitsprozess III</p>
+          <h3>Empathiephase</h3>
+          <p>Empathy Maps, Personas und HMW-Fragen zur Identifikation von Usability-Problemen.</p>
+          <span class="card-arrow">→</span>
+        </a>
+
+        <a href="pages/texte.html" class="section-card">
+          <p class="card-num">Arbeitsprozess IV</p>
+          <h3>Texte &amp; Kommunikation</h3>
+          <p>Tonalität, Call-to-Actions und Textoptimierung für die Zielgruppe 16–35.</p>
+          <span class="card-arrow">→</span>
+        </a>
+
+        <a href="pages/rueckblick.html" class="section-card">
+          <p class="card-num">Abschluss</p>
+          <h3>Sprint Review &amp; Learnings</h3>
+          <p>Post-Launch Feedback, Nutzertests und persönliche Erkenntnisse aus dem Design Sprint.</p>
+          <span class="card-arrow">→</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Rollen -->
+    <article>
+      <section id="skills-section" style="margin-top: 6rem;">
+        <img loading="lazy" id="bg_skills" src="media/bg_skills.png" alt=""
+             style="height:170vh; opacity:0.1; width:110vw; margin-left:-5%;">
+        <div class="rollen">
+          <ul>
+            <h3>Meine Rollen &amp; Beiträge</h3>
+            <li>UX Design</li>
+            <li>UI Design</li>
+            <li>Visual Design</li>
+            <li>Grafik Design</li>
+            <li>UX Writing</li>
+            <li>Informationsarchitektur</li>
+            <li>Responsive Design</li>
+            <li>Logo Design</li>
+          </ul>
+          <ul>
+            <h3>Design &amp; Umsetzung</h3>
+            <li>Textoptimierung für Call-to-Actions</li>
+            <li>Visuelle Hierarchie verbessert</li>
+            <li>Markenkohärenz umgesetzt</li>
+            <li>Designentscheidungen dokumentiert</li>
+            <li>Empfehlungen zur Produktdarstellung</li>
+            <li>Entfernung exkludierender Designelemente</li>
+          </ul>
+          <ul>
+            <h3>Analyse &amp; Planung</h3>
+            <li>Projektmanager</li>
+            <li>Designsprint Organisator</li>
+            <li>Bestandsaufnahme der Website</li>
+            <li>Benchmarking &amp; Konkurrenzanalyse</li>
+            <li>Identifikation von Usability-Problemen</li>
+            <li>Re-Design unter Zeitdruck</li>
+            <li>Mobile-First-Strategie</li>
+            <li>Competitive Audit</li>
+            <li>Userflow-Optimierung</li>
+          </ul>
+          <ul>
+            <h3>Kommunikation &amp; Strategie</h3>
+            <li>Kommunikation mit Entwickler und Klient</li>
+            <li>Abstimmung von Design und Technik</li>
+            <li>Feature-Vorschläge eingebracht</li>
+            <li>Marketingideen eingebracht</li>
+            <li>Logo &amp; Farbkonzept optimiert</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

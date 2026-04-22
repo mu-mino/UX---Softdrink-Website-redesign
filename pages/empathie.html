@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FuseTea – Empathiephase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../fuseTea.css">
+  <script>window.TRANSITION_ICON = '../media/yasarsDoseIcon.png';</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script defer src="../transition.js"></script>
+  <script defer src="../fuseTea.js"></script>
+</head>
+<body>
+  <div class="background-blobs">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <nav class="page-nav">
+    <a href="produkte.html" class="back-link">← Produktdarstellung</a>
+    <span class="page-title-small">Arbeitsprozess III – Empathiephase</span>
+    <a href="texte.html" class="next-link">Arbeitsprozess IV →</a>
+  </nav>
+
+  <main class="page-content">
+
+    <article id="empaPhone">
+      <h1 id="workProcess" style="margin-top:5% !important; margin-left:5% !important;">Der Arbeitsprozess <span>&nbsp;Ⅲ</span></h1>
+      <h2 id="IA" style="color:white; font-weight:800; margin-left:5% !important;">
+        Empathiephase im UX-Designprozess – Beispiel &amp; Analyse
+      </h2>
+
+      <div id="empathyWrapper">
+        <h3 style="margin-left:8% !important; margin:3% 0;">UX-Rechercheergebnisse</h3>
+        <ul style="margin-left:3% !important;">
+          <li>Der Großteil der Benutzer ist zwischen 16 und 35 Jahre alt.</li>
+          <li>Die Mehrheit der Benutzer hat einen ausländischen Hintergrund.</li>
+          <li>Die Kunden des Start-ups sind überwiegend Endkonsument:innen.</li>
+          <h3>Problem Statement</h3>
+          <li>Die ursprüngliche Startseite enthielt eine Illustration mit nationaler Symbolik und bot wenig Orientierung. Dies führte zu Verunsicherung bei Nutzer:innen mit unterschiedlichem kulturellen Hintergrund.</li>
+          <h3>Hypothesis Statement</h3>
+          <li>Wenn wir eine inklusivere Bildsprache einsetzen und die Inhalte klar gliedern, steigert das die emotionale Bindung und verbessert den Userflow.</li>
+        </ul>
+      </div>
+
+      <section id="empathyRedesign">
+        <div id="empathyGrid">
+          <div class="image-wrapper">
+            <img loading="lazy" src="../media/hmw.png" alt="HowMightWe">
+          </div>
+          <ul>
+            <li>Wie könnten wir visuelle Inhalte gestalten, die kulturell inklusiv wirken?</li>
+            <li>Wie könnten wir Urlaubssymbole nutzen, ohne nationalistische Konnotationen?</li>
+            <li>Wie lässt sich eine internationale Identität betonen?</li>
+            <li>Wie schaffen wir visuelle Kongruenz über die gesamte Website hinweg?</li>
+            <li>Wie fördern wir ein emotional positives Markenerlebnis?</li>
+            <li>Wie könnten wir Packungsgrößen für Endkonsument:innen attraktiver gestalten?</li>
+          </ul>
+        </div>
+
+        <div class="productText" style="margin-top:0 !important;">
+          <ul>
+            <h3>Ausgangssituation</h3>
+            <p>In der <strong>Empathy Phase</strong> untersuchte ich visuelle Inhalte der Startseite. Dabei fiel auf, dass eine Illustration unter „Unsere Geschichte" unbeabsichtigt <strong>exkludierende visuelle Elemente</strong> enthielt.</p>
+          </ul>
+
+          <ul>
+            <h3 style="margin-left:5%;">Empathy Maps &amp; Persona</h3>
+            <div id="empathyMedia">
+              <div id="empathyCardContainer" class="card-slider">
+                <div class="empathy-card">
+                  <img loading="lazy" src="../media/Amina_weiss.png" class="empathy-map active" alt="Empathy Map Amina">
+                  <img loading="lazy" src="../media/Mehmet_weiss.png" class="empathy-map" alt="Empathy Map Mehmet">
+                  <img loading="lazy" src="../media/Serhat_weiss.png" class="empathy-map" alt="Empathy Map Serhat">
+                </div>
+                <button id="prevEmpathy" class="nav-button left">&#10094;</button>
+                <button id="nextEmpathy" class="nav-button right">&#10095;</button>
+              </div>
+
+              <div id="visionCardContainer" class="card-slider">
+                <div class="vision-card">
+                  <img loading="lazy" src="../media/Benutzergeschichten_Amina_Weiss.png" class="vision-map active" alt="Vision Map 1">
+                  <img loading="lazy" src="../media/Benutzergeschichten_Serhat_Weiss.png" class="vision-map" alt="Vision Map 2">
+                  <img loading="lazy" src="../media/Benutzergeschichten_Mehmet_Weiss.png" class="vision-map" alt="Vision Map 3">
+                </div>
+                <button id="prevVision">&#10094;</button>
+                <button id="nextVision">&#10095;</button>
+              </div>
+
+              <div id="persona" style="display:block; transform:translateX(20%); margin-top:-15% !important; margin-bottom:15% !important;">
+                <img loading="lazy" src="../media/Persona_weiss.jpeg" alt="User Persona" style="width:60%;">
+              </div>
+            </div>
+          </ul>
+
+          <ul style="list-style-type:disc;">
+            <h3>Analyse – Vorher vs. Nachher</h3>
+            <li><strong>Problem:</strong> Das vorherige Bild zeigte einen Jungen mit Türkei-Shirt – potenziell ausgrenzend für Besucher:innen mit anderer Herkunft.</li>
+            <li><strong>UX-Ziel:</strong> Inklusivität, Emotionalität und Identifikation für alle Nutzergruppen stärken.</li>
+            <li><strong>Maßnahme:</strong> Austausch durch eine lila-pinkfarbene Grafik mit Hawaii-Hemd statt Nationalflagge.</li>
+            <li><strong>Visuelle Wirkung:</strong> Pink und Violett fördern laut Farbpsychologie Entspannung, Lust und Nostalgie.</li>
+            <li><strong>Lösung für Packungsgrößen:</strong> Einführung von 12er-Packs statt 24er – gezielt für Endnutzer:innen.</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+
+  </main>
+
+  <div class="page-footer-nav">
+    <a href="produkte.html" class="back-link">← Produktdarstellung</a>
+    <a href="texte.html" class="next-link">Weiter: Texte &amp; Kommunikation →</a>
+  </div>
+</body>
+</html>
