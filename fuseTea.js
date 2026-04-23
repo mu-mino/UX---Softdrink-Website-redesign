@@ -136,21 +136,23 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   // ── TwentyTwenty before/after ──
-  window.addEventListener('load', () => {
+  const initSlider = () => {
     const container = document.querySelector('.twentytwenty-container');
-    if (container && typeof $ !== 'undefined') {
-      $(".twentytwenty-container").twentytwenty();
-      const beforeImg = document.getElementById('beforeImg');
-      const afterImg = document.getElementById('afterImg');
-      if (beforeImg && afterImg) {
-        const setHeight = () => {
-          const h = afterImg.clientHeight;
-          if (h > 0) { beforeImg.style.height = h + 'px'; beforeImg.style.width = 'auto'; }
-        };
-        afterImg.complete ? setHeight() : (afterImg.onload = setHeight);
-      }
+    if (!container || typeof $ === 'undefined') return;
+    const afterImg = document.getElementById('afterImg');
+    if (!afterImg) return;
+    const run = () => $(".twentytwenty-container").twentytwenty({ default_offset_pct: 0.5 });
+    if (afterImg.complete && afterImg.naturalHeight > 0) {
+      run();
+    } else {
+      afterImg.addEventListener('load', run, { once: true });
     }
-  });
+  };
+  if (document.readyState === 'complete') {
+    initSlider();
+  } else {
+    window.addEventListener('load', initSlider, { once: true });
+  }
 
   // ── Scroll-driven handle position ──
   const scrollWrapper = document.querySelector('.scroll-wrapper');

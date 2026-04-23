@@ -14,22 +14,9 @@ Ein vollständiges UX/UI-Redesign für einen Softdrinks-Onlineshop, entstanden i
 | `pages/texte.html` | Arbeitsprozess IV – Textoptimierung & Zielgruppenansprache |
 | `pages/rueckblick.html` | Sprint Review, Post-Launch Feedback & Learnings |
 
-## Lokale Vorschau
-
-Kein Build-Step nötig. Einfach `index.html` in einem Browser öffnen – oder mit einem lokalen Server:
-
-```bash
-npx serve .
-# oder
-python3 -m http.server
-```
-
 ## GitHub Pages
 
-1. Repo auf GitHub erstellen (public)
-2. `Projekte/FuseTea/` Inhalt committen und pushen
-3. Settings → Pages → Branch: `main`, Ordner: `/` (root) → Save
-4. URL: `https://<username>.github.io/<repo-name>/`
+URL: "https://mu-mino.github.io/UX---Softdrink-Website-redesign/" 
 
 ## Stack
 
@@ -43,3 +30,8 @@ python3 -m http.server
 **Rolle:** UX Design, UI Design, Visual Design, Grafik Design, UX Writing, Informationsarchitektur, Responsive Design, Projektmanagement  
 **Zeitrahmen:** 1 Woche (Design Sprint)  
 **Tools:** Krita, Canva, Goodnotes, ChatGPT, Galerie-App (Samsung)
+
+## License
+
+Code: [MIT](LICENSE)  
+Media & design assets: © 2025 Muhammed Emin Eser, all rights reserved.
